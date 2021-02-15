@@ -1,0 +1,382 @@
+=========================================================================================================
+Auto created by the td v4.6.18154
+@Copy Right: Shanghai Anlogic Infotech, 2011 - 2021.
+Thu Feb 11 18:11:20 2021
+=========================================================================================================
+
+
+Top Model:                IIR_Filter                                                      
+Device:                   eagle_s20                                                       
+Timing Constraint File:   Contraints/clock.sdc                                            
+STA Level:                Detail                                                          
+Process parameter::       TT  1.10v  85C                                                  
+
+=========================================================================================================
+Timing constraint:        clock: i_clk                                                    
+Clock = i_clk, period 40ns, rising at 0ns, falling at 20ns
+
+711 endpoints analyzed totally, and 10701 paths analyzed
+0 errors detected : 0 setup errors (TNS = 0.000), 0 hold errors (TNS = 0.000)
+Minimum period is 10.496ns
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point [1]$biquad/multiplier_d/Integer_Multiplier_ (18 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)      14.752 ns                                                       
+ StartPoint:              [1]$biquad/reg3_b5|[1]$biquad/reg2_b5.clk (falling edge triggered by clock i_clk)
+ EndPoint:                [1]$biquad/multiplier_d/Integer_Multiplier_.b[5] (rising edge triggered by clock i_clk)
+ Clock group:             i_clk                                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ [1]$biquad/reg3_b5|[1]$biquad/reg2_b5.clk                   clock                   3.971
+ launch clock edge                                           clock                  20.000
+ [1]$biquad/reg3_b5|[1]$biquad/reg2_b5.q[1]                  cell                    0.146
+ [1]$biquad/multiplier_d/Integer_Multiplier_.b[5] ([1]$biquad/r_z4[5]) net (fanout = 1)        0.928 ../../source/BiQuad.v(45)
+ [1]$biquad/multiplier_d/Integer_Multiplier_                 path2reg                3.563
+ Arrival time                                                                       28.608 (1 lvl)
+                                                                                          (97% logic, 3% net)
+
+ [1]$biquad/multiplier_d/Integer_Multiplier_.clk                                     3.281
+ capture clock edge                                                                 40.000
+ cell setup                                                                         -0.100
+ clock uncertainty                                                                  -0.200
+ clock recovergence pessimism                                                        0.379
+ Required time                                                                      43.360
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           14.752 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)      14.833 ns                                                       
+ StartPoint:              [1]$biquad/reg3_b1|[1]$biquad/reg2_b1.clk (falling edge triggered by clock i_clk)
+ EndPoint:                [1]$biquad/multiplier_d/Integer_Multiplier_.b[1] (rising edge triggered by clock i_clk)
+ Clock group:             i_clk                                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ [1]$biquad/reg3_b1|[1]$biquad/reg2_b1.clk                   clock                   3.971
+ launch clock edge                                           clock                  20.000
+ [1]$biquad/reg3_b1|[1]$biquad/reg2_b1.q[1]                  cell                    0.146
+ [1]$biquad/multiplier_d/Integer_Multiplier_.b[1] ([1]$biquad/r_z4[1]) net (fanout = 1)        0.847 ../../source/BiQuad.v(45)
+ [1]$biquad/multiplier_d/Integer_Multiplier_                 path2reg                3.563
+ Arrival time                                                                       28.527 (1 lvl)
+                                                                                          (98% logic, 2% net)
+
+ [1]$biquad/multiplier_d/Integer_Multiplier_.clk                                     3.281
+ capture clock edge                                                                 40.000
+ cell setup                                                                         -0.100
+ clock uncertainty                                                                  -0.200
+ clock recovergence pessimism                                                        0.379
+ Required time                                                                      43.360
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           14.833 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)      14.982 ns                                                       
+ StartPoint:              [1]$biquad/reg3_b3|[1]$biquad/reg2_b3.clk (falling edge triggered by clock i_clk)
+ EndPoint:                [1]$biquad/multiplier_d/Integer_Multiplier_.b[3] (rising edge triggered by clock i_clk)
+ Clock group:             i_clk                                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ [1]$biquad/reg3_b3|[1]$biquad/reg2_b3.clk                   clock                   3.971
+ launch clock edge                                           clock                  20.000
+ [1]$biquad/reg3_b3|[1]$biquad/reg2_b3.q[1]                  cell                    0.146
+ [1]$biquad/multiplier_d/Integer_Multiplier_.b[3] ([1]$biquad/r_z4[3]) net (fanout = 1)        0.698 ../../source/BiQuad.v(45)
+ [1]$biquad/multiplier_d/Integer_Multiplier_                 path2reg                3.563
+ Arrival time                                                                       28.378 (1 lvl)
+                                                                                          (98% logic, 2% net)
+
+ [1]$biquad/multiplier_d/Integer_Multiplier_.clk                                     3.281
+ capture clock edge                                                                 40.000
+ cell setup                                                                         -0.100
+ clock uncertainty                                                                  -0.200
+ clock recovergence pessimism                                                        0.379
+ Required time                                                                      43.360
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           14.982 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point [1]$biquad/multiplier_a/Integer_Multiplier_ (18 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)      14.752 ns                                                       
+ StartPoint:              [1]$biquad/reg1_b4|[1]$biquad/reg1_b5.clk (falling edge triggered by clock i_clk)
+ EndPoint:                [1]$biquad/multiplier_a/Integer_Multiplier_.b[5] (rising edge triggered by clock i_clk)
+ Clock group:             i_clk                                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ [1]$biquad/reg1_b4|[1]$biquad/reg1_b5.clk                   clock                   3.971
+ launch clock edge                                           clock                  20.000
+ [1]$biquad/reg1_b4|[1]$biquad/reg1_b5.q[0]                  cell                    0.146
+ [1]$biquad/multiplier_a/Integer_Multiplier_.b[5] ([1]$biquad/r_z2[5]) net (fanout = 3)        0.928 ../../source/BiQuad.v(43)
+ [1]$biquad/multiplier_a/Integer_Multiplier_                 path2reg                3.563
+ Arrival time                                                                       28.608 (1 lvl)
+                                                                                          (97% logic, 3% net)
+
+ [1]$biquad/multiplier_a/Integer_Multiplier_.clk                                     3.281
+ capture clock edge                                                                 40.000
+ cell setup                                                                         -0.100
+ clock uncertainty                                                                  -0.200
+ clock recovergence pessimism                                                        0.379
+ Required time                                                                      43.360
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           14.752 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)      14.768 ns                                                       
+ StartPoint:              [1]$biquad/reg1_b12|[1]$biquad/reg1_b13.clk (falling edge triggered by clock i_clk)
+ EndPoint:                [1]$biquad/multiplier_a/Integer_Multiplier_.b[12] (rising edge triggered by clock i_clk)
+ Clock group:             i_clk                                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ [1]$biquad/reg1_b12|[1]$biquad/reg1_b13.clk                 clock                   3.971
+ launch clock edge                                           clock                  20.000
+ [1]$biquad/reg1_b12|[1]$biquad/reg1_b13.q[1]                cell                    0.146
+ [1]$biquad/multiplier_a/Integer_Multiplier_.b[12] ([1]$biquad/r_z2[12]) net (fanout = 3)        0.912 ../../source/BiQuad.v(43)
+ [1]$biquad/multiplier_a/Integer_Multiplier_                 path2reg                3.563
+ Arrival time                                                                       28.592 (1 lvl)
+                                                                                          (97% logic, 3% net)
+
+ [1]$biquad/multiplier_a/Integer_Multiplier_.clk                                     3.281
+ capture clock edge                                                                 40.000
+ cell setup                                                                         -0.100
+ clock uncertainty                                                                  -0.200
+ clock recovergence pessimism                                                        0.379
+ Required time                                                                      43.360
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           14.768 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)      14.835 ns                                                       
+ StartPoint:              [1]$biquad/reg1_b3|[1]$biquad/reg1_b6.clk (falling edge triggered by clock i_clk)
+ EndPoint:                [1]$biquad/multiplier_a/Integer_Multiplier_.b[3] (rising edge triggered by clock i_clk)
+ Clock group:             i_clk                                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ [1]$biquad/reg1_b3|[1]$biquad/reg1_b6.clk                   clock                   3.971
+ launch clock edge                                           clock                  20.000
+ [1]$biquad/reg1_b3|[1]$biquad/reg1_b6.q[1]                  cell                    0.146
+ [1]$biquad/multiplier_a/Integer_Multiplier_.b[3] ([1]$biquad/r_z2[3]) net (fanout = 3)        0.845 ../../source/BiQuad.v(43)
+ [1]$biquad/multiplier_a/Integer_Multiplier_                 path2reg                3.563
+ Arrival time                                                                       28.525 (1 lvl)
+                                                                                          (98% logic, 2% net)
+
+ [1]$biquad/multiplier_a/Integer_Multiplier_.clk                                     3.281
+ capture clock edge                                                                 40.000
+ cell setup                                                                         -0.100
+ clock uncertainty                                                                  -0.200
+ clock recovergence pessimism                                                        0.379
+ Required time                                                                      43.360
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           14.835 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point [0]$biquad/multiplier_d/Integer_Multiplier_ (18 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)      14.761 ns                                                       
+ StartPoint:              [0]$biquad/reg3_b8|[0]$biquad/reg2_b8.clk (falling edge triggered by clock i_clk)
+ EndPoint:                [0]$biquad/multiplier_d/Integer_Multiplier_.b[8] (rising edge triggered by clock i_clk)
+ Clock group:             i_clk                                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ [0]$biquad/reg3_b8|[0]$biquad/reg2_b8.clk                   clock                   3.971
+ launch clock edge                                           clock                  20.000
+ [0]$biquad/reg3_b8|[0]$biquad/reg2_b8.q[1]                  cell                    0.146
+ [0]$biquad/multiplier_d/Integer_Multiplier_.b[8] ([0]$biquad/r_z4[8]) net (fanout = 1)        0.919 ../../source/BiQuad.v(45)
+ [0]$biquad/multiplier_d/Integer_Multiplier_                 path2reg                3.563
+ Arrival time                                                                       28.599 (1 lvl)
+                                                                                          (97% logic, 3% net)
+
+ [0]$biquad/multiplier_d/Integer_Multiplier_.clk                                     3.281
+ capture clock edge                                                                 40.000
+ cell setup                                                                         -0.100
+ clock uncertainty                                                                  -0.200
+ clock recovergence pessimism                                                        0.379
+ Required time                                                                      43.360
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           14.761 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)      14.804 ns                                                       
+ StartPoint:              [0]$biquad/reg3_b15|[0]$biquad/reg2_b15.clk (falling edge triggered by clock i_clk)
+ EndPoint:                [0]$biquad/multiplier_d/Integer_Multiplier_.b[15] (rising edge triggered by clock i_clk)
+ Clock group:             i_clk                                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ [0]$biquad/reg3_b15|[0]$biquad/reg2_b15.clk                 clock                   3.971
+ launch clock edge                                           clock                  20.000
+ [0]$biquad/reg3_b15|[0]$biquad/reg2_b15.q[1]                cell                    0.146
+ [0]$biquad/multiplier_d/Integer_Multiplier_.b[15] ([0]$biquad/r_z4[15]) net (fanout = 3)        0.876 ../../source/BiQuad.v(45)
+ [0]$biquad/multiplier_d/Integer_Multiplier_                 path2reg                3.563
+ Arrival time                                                                       28.556 (1 lvl)
+                                                                                          (97% logic, 3% net)
+
+ [0]$biquad/multiplier_d/Integer_Multiplier_.clk                                     3.281
+ capture clock edge                                                                 40.000
+ cell setup                                                                         -0.100
+ clock uncertainty                                                                  -0.200
+ clock recovergence pessimism                                                        0.379
+ Required time                                                                      43.360
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           14.804 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)      14.820 ns                                                       
+ StartPoint:              [0]$biquad/reg3_b14|[0]$biquad/reg2_b14.clk (falling edge triggered by clock i_clk)
+ EndPoint:                [0]$biquad/multiplier_d/Integer_Multiplier_.b[14] (rising edge triggered by clock i_clk)
+ Clock group:             i_clk                                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ [0]$biquad/reg3_b14|[0]$biquad/reg2_b14.clk                 clock                   3.971
+ launch clock edge                                           clock                  20.000
+ [0]$biquad/reg3_b14|[0]$biquad/reg2_b14.q[1]                cell                    0.146
+ [0]$biquad/multiplier_d/Integer_Multiplier_.b[14] ([0]$biquad/r_z4[14]) net (fanout = 1)        0.860 ../../source/BiQuad.v(45)
+ [0]$biquad/multiplier_d/Integer_Multiplier_                 path2reg                3.563
+ Arrival time                                                                       28.540 (1 lvl)
+                                                                                          (97% logic, 3% net)
+
+ [0]$biquad/multiplier_d/Integer_Multiplier_.clk                                     3.281
+ capture clock edge                                                                 40.000
+ cell setup                                                                         -0.100
+ clock uncertainty                                                                  -0.200
+ clock recovergence pessimism                                                        0.379
+ Required time                                                                      43.360
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           14.820 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Hold checks:
+---------------------------------------------------------------------------------------------------------
+Paths for end point [1]$biquad/reg3_b4|[1]$biquad/reg2_b4 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       0.266 ns                                                        
+ StartPoint:              [1]$biquad/reg1_b4|[1]$biquad/reg1_b5.clk (falling edge triggered by clock i_clk)
+ EndPoint:                [1]$biquad/reg3_b4|[1]$biquad/reg2_b4.mi[0] (falling edge triggered by clock i_clk)
+ Clock group:             i_clk                                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ [1]$biquad/reg1_b4|[1]$biquad/reg1_b5.clk                   clock                   3.461
+ launch clock edge                                           clock                  20.000
+ [1]$biquad/reg1_b4|[1]$biquad/reg1_b5.q[1]                  cell                    0.140
+ [1]$biquad/reg3_b4|[1]$biquad/reg2_b4.mi[0] ([1]$biquad/r_z2[4]) net (fanout = 3)        0.283 ../../source/BiQuad.v(43)
+ [1]$biquad/reg3_b4|[1]$biquad/reg2_b4                       path2reg0               0.138
+ Arrival time                                                                       24.022 (1 lvl)
+                                                                                          (99% logic, 1% net)
+
+ [1]$biquad/reg3_b4|[1]$biquad/reg2_b4.clk                                           3.971
+ capture clock edge                                                                 20.000
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.200
+ clock recovergence pessimism                                                       -0.489
+ Required time                                                                      23.756
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.266 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point [0]$biquad/reg3_b12|[0]$biquad/reg2_b12 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       0.275 ns                                                        
+ StartPoint:              [0]$biquad/reg1_b12|[0]$biquad/reg1_b13.clk (falling edge triggered by clock i_clk)
+ EndPoint:                [0]$biquad/reg3_b12|[0]$biquad/reg2_b12.mi[0] (falling edge triggered by clock i_clk)
+ Clock group:             i_clk                                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ [0]$biquad/reg1_b12|[0]$biquad/reg1_b13.clk                 clock                   3.461
+ launch clock edge                                           clock                  20.000
+ [0]$biquad/reg1_b12|[0]$biquad/reg1_b13.q[1]                cell                    0.140
+ [0]$biquad/reg3_b12|[0]$biquad/reg2_b12.mi[0] ([0]$biquad/r_z2[12]) net (fanout = 3)        0.292 ../../source/BiQuad.v(43)
+ [0]$biquad/reg3_b12|[0]$biquad/reg2_b12                     path2reg0               0.138
+ Arrival time                                                                       24.031 (1 lvl)
+                                                                                          (99% logic, 1% net)
+
+ [0]$biquad/reg3_b12|[0]$biquad/reg2_b12.clk                                         3.971
+ capture clock edge                                                                 20.000
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.200
+ clock recovergence pessimism                                                       -0.489
+ Required time                                                                      23.756
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.275 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point [1]$biquad/reg3_b5|[1]$biquad/reg2_b5 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       0.294 ns                                                        
+ StartPoint:              [1]$biquad/reg1_b4|[1]$biquad/reg1_b5.clk (falling edge triggered by clock i_clk)
+ EndPoint:                [1]$biquad/reg3_b5|[1]$biquad/reg2_b5.mi[0] (falling edge triggered by clock i_clk)
+ Clock group:             i_clk                                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ [1]$biquad/reg1_b4|[1]$biquad/reg1_b5.clk                   clock                   3.461
+ launch clock edge                                           clock                  20.000
+ [1]$biquad/reg1_b4|[1]$biquad/reg1_b5.q[0]                  cell                    0.140
+ [1]$biquad/reg3_b5|[1]$biquad/reg2_b5.mi[0] ([1]$biquad/r_z2[5]) net (fanout = 3)        0.417 ../../source/BiQuad.v(43)
+ [1]$biquad/reg3_b5|[1]$biquad/reg2_b5                       path2reg0               0.138
+ Arrival time                                                                       24.156 (1 lvl)
+                                                                                          (99% logic, 1% net)
+
+ [1]$biquad/reg3_b5|[1]$biquad/reg2_b5.clk                                           3.971
+ capture clock edge                                                                 20.000
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.200
+ clock recovergence pessimism                                                       -0.383
+ Required time                                                                      23.862
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.294 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Period checks:
+---------------------------------------------------------------------------------------------------------
+ Point                                             Type          Setting(ns)    Requied(ns)     Slack(ns)  
+---------------------------------------------------------------------------------------------------------
+ [0]$biquad/multiplier_a/Integer_Multiplier_.clk   min period      40.000          3.414         36.586    
+ [0]$biquad/multiplier_b/Integer_Multiplier_.clk   min period      40.000          3.414         36.586    
+ [0]$biquad/multiplier_c/Integer_Multiplier_.clk   min period      40.000          3.414         36.586    
+ [0]$biquad/multiplier_d/Integer_Multiplier_.clk   min period      40.000          3.414         36.586    
+ [1]$biquad/multiplier_a/Integer_Multiplier_.clk   min period      40.000          3.414         36.586    
+ [1]$biquad/multiplier_b/Integer_Multiplier_.clk   min period      40.000          3.414         36.586    
+ [1]$biquad/multiplier_c/Integer_Multiplier_.clk   min period      40.000          3.414         36.586    
+ [1]$biquad/multiplier_d/Integer_Multiplier_.clk   min period      40.000          3.414         36.586    
+ [2]$biquad/multiplier_a/Integer_Multiplier_.clk   min period      40.000          3.414         36.586    
+ [2]$biquad/multiplier_b/Integer_Multiplier_.clk   min period      40.000          3.414         36.586    
+ [2]$biquad/multiplier_c/Integer_Multiplier_.clk   min period      40.000          3.414         36.586    
+ [2]$biquad/multiplier_d/Integer_Multiplier_.clk   min period      40.000          3.414         36.586    
+ multiplier/Integer_Multiplier_.clk                min period      40.000          3.414         36.586    
+
+=========================================================================================================
+Timing summary:                                                                           
+---------------------------------------------------------------------------------------------------------
+Constraint path number: 10701 (STA coverage = 72.68%)
+Timing violations: 0 setup errors, and 0 hold errors.
+Minimal setup slack: 14.752, minimal hold slack: 0.266
+
+Timing group statistics: 
+	Clock constraints: 
+	  Clock Name                                  Min Period     Max Freq           Skew      Fanout            TNS
+	  i_clk (25.000MHz)                             10.496ns      95.274MHz        0.399ns       195        0.000ns
+	Minimum input arrival time before clock: no constraint path
+	Maximum output required time after clock: no constraint path
+	Maximum combinational path delay: no constraint path
+
+---------------------------------------------------------------------------------------------------------

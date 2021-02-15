@@ -1,0 +1,33 @@
+standard
+***Report Model: IIR_Filter***
+
+IO Statistics
+#IO                    69
+  #input               50
+  #output              19
+  #inout                0
+
+Gate Statistics
+#Basic gates          717
+  #and                 41
+  #nand                 0
+  #or                   8
+  #nor                  0
+  #xor                  0
+  #xnor                 0
+  #buf                  0
+  #not                  9
+  #bufif1               0
+  #MX21                 0
+  #FADD                 0
+  #DFF                659
+  #LATCH                0
+#MACRO_ADD             12
+#MACRO_MULT            13
+
+Report Hierarchy Area:
++---------------------------------------------+
+|Instance |Module     |gates  |seq    |macros |
++---------------------------------------------+
+|top      |IIR_Filter |58     |659    |25     |
++---------------------------------------------+

@@ -1,0 +1,33 @@
+standard
+***Report Model: IIR_Filter***
+
+IO Statistics
+#IO                    69
+  #input               50
+  #output              19
+  #inout                0
+
+Utilization Statistics
+#lut                  183   out of  19600    0.93%
+#reg                  323   out of  19600    1.65%
+#le                   442
+  #lut only           119   out of    442   26.92%
+  #reg only           259   out of    442   58.60%
+  #lut&reg             64   out of    442   14.48%
+#dsp                   13   out of     29   44.83%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   69   out of    188   36.70%
+  #ireg                 0
+  #oreg                16
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+Report Hierarchy Area:
++------------------------------------------+
+|Instance |Module     |le    |lut   |seq   |
++------------------------------------------+
+|top      |IIR_Filter |442   |183   |323   |
++------------------------------------------+

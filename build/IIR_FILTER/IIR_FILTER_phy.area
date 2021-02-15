@@ -1,0 +1,101 @@
+standard
+***Report Model: IIR_Filter***
+
+IO Statistics
+#IO                    69
+  #input               50
+  #output              19
+  #inout                0
+
+Utilization Statistics
+#lut                  183   out of  19600    0.93%
+#reg                  323   out of  19600    1.65%
+#le                   442
+  #lut only           119   out of    442   26.92%
+  #reg only           259   out of    442   58.60%
+  #lut&reg             64   out of    442   14.48%
+#dsp                   13   out of     29   44.83%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   56   out of    188   29.79%
+  #ireg                 0
+  #oreg                14
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+
+Detailed IO Report
+
+Name                       Direction     Location     IOStandard     DriveStrength     PackReg                  
+i_clk                      INPUT         F9           LVCMOS25       N/A               NONE                     
+i_master_read_ack          INPUT         S41          LVCMOS25       N/A               NONE                     
+i_master_read_data[15]     INPUT         S83          LVCMOS25       N/A               NONE                     
+i_master_read_data[14]     INPUT         F5           LVCMOS25       N/A               NONE                     
+i_master_read_data[13]     INPUT         D16          LVCMOS25       N/A               NONE                     
+i_master_read_data[12]     INPUT         N8           LVCMOS25       N/A               NONE                     
+i_master_read_data[11]     INPUT         G6           LVCMOS25       N/A               NONE                     
+i_master_read_data[10]     INPUT         F14          LVCMOS25       N/A               NONE                     
+i_master_read_data[9]      INPUT         T4           LVCMOS25       N/A               NONE                     
+i_master_read_data[8]      INPUT         P13          LVCMOS25       N/A               NONE                     
+i_master_read_data[7]      INPUT         A6           LVCMOS25       N/A               NONE                     
+i_master_read_data[6]      INPUT         P7           LVCMOS25       N/A               NONE                     
+i_master_read_data[5]      INPUT         T15          LVCMOS25       N/A               NONE                     
+i_master_read_data[4]      INPUT         S61          LVCMOS25       N/A               NONE                     
+i_master_read_data[3]      INPUT         H15          LVCMOS25       N/A               NONE                     
+i_master_read_data[2]      INPUT         S20          LVCMOS25       N/A               NONE                     
+i_master_read_data[1]      INPUT         R12          LVCMOS25       N/A               NONE                     
+i_master_read_data[0]      INPUT         C2           LVCMOS25       N/A               NONE                     
+i_reset_sync               INPUT         A11          LVCMOS25       N/A               NONE                     
+i_slave_read_stb           INPUT         C9           LVCMOS25       N/A               NONE                     
+i_slave_write_addr[12]     INPUT         R14          LVCMOS25       N/A               NONE                     
+i_slave_write_addr[11]     INPUT         S55          LVCMOS25       N/A               NONE                     
+i_slave_write_addr[10]     INPUT         S29          LVCMOS25       N/A               NONE                     
+i_slave_write_addr[9]      INPUT         J12          LVCMOS25       N/A               NONE                     
+i_slave_write_addr[8]      INPUT         S84          LVCMOS25       N/A               NONE                     
+i_slave_write_addr[7]      INPUT         H5           LVCMOS25       N/A               NONE                     
+i_slave_write_addr[6]      INPUT         A7           LVCMOS25       N/A               NONE                     
+i_slave_write_addr[5]      INPUT         F12          LVCMOS25       N/A               NONE                     
+i_slave_write_addr[4]      INPUT         N3           LVCMOS25       N/A               NONE                     
+i_slave_write_addr[3]      INPUT         M10          LVCMOS25       N/A               NONE                     
+i_slave_write_addr[2]      INPUT         S59          LVCMOS25       N/A               NONE                     
+i_slave_write_addr[1]      INPUT         C15          LVCMOS25       N/A               NONE                     
+i_slave_write_addr[0]      INPUT         S38          LVCMOS25       N/A               NONE                     
+i_slave_write_data[15]     INPUT         M4           LVCMOS25       N/A               NONE                     
+i_slave_write_data[14]     INPUT         R15          LVCMOS25       N/A               NONE                     
+i_slave_write_data[13]     INPUT         G3           LVCMOS25       N/A               NONE                     
+i_slave_write_data[12]     INPUT         B6           LVCMOS25       N/A               NONE                     
+i_slave_write_data[11]     INPUT         E10          LVCMOS25       N/A               NONE                     
+i_slave_write_data[10]     INPUT         L1           LVCMOS25       N/A               NONE                     
+i_slave_write_data[9]      INPUT         S88          LVCMOS25       N/A               NONE                     
+i_slave_write_data[8]      INPUT         P12          LVCMOS25       N/A               NONE                     
+i_slave_write_data[7]      INPUT         G5           LVCMOS25       N/A               NONE                     
+i_slave_write_data[6]      INPUT         E6           LVCMOS25       N/A               NONE                     
+i_slave_write_data[5]      INPUT         F13          LVCMOS25       N/A               NONE                     
+i_slave_write_data[4]      INPUT         S42          LVCMOS25       N/A               NONE                     
+i_slave_write_data[3]      INPUT         R3           LVCMOS25       N/A               NONE                     
+i_slave_write_data[2]      INPUT         T10          LVCMOS25       N/A               NONE                     
+i_slave_write_data[1]      INPUT         P15          LVCMOS25       N/A               NONE                     
+i_slave_write_data[0]      INPUT         G1           LVCMOS25       N/A               NONE                     
+i_slave_write_stb          INPUT         B3           LVCMOS25       N/A               NONE                     
+o_master_read_stb          OUTPUT        C16          LVCMOS25       8                 NONE                     
+o_slave_read_ack           OUTPUT        D11          LVCMOS25       8                 NONE                     
+o_slave_read_data[15]      OUTPUT        M15          LVCMOS25       8                 OREG                     
+o_slave_read_data[14]      OUTPUT        C3           LVCMOS25       8                 OREG                     
+o_slave_read_data[13]      OUTPUT        C5           LVCMOS25       8                 OREG                     
+o_slave_read_data[12]      OUTPUT        G14          LVCMOS25       8                 OREG                     
+o_slave_read_data[11]      OUTPUT        J16          LVCMOS25       8                 OREG                     
+o_slave_read_data[10]      OUTPUT        T14          LVCMOS25       8                 OREG                     
+o_slave_read_data[9]       OUTPUT        P10          LVCMOS25       8                 OREG                     
+o_slave_read_data[8]       OUTPUT        S5           LVCMOS25       8                 OREG                     
+o_slave_read_data[7]       OUTPUT        S58          LVCMOS25       8                 OREG                     
+o_slave_read_data[6]       OUTPUT        F7           LVCMOS25       8                 OREG                     
+o_slave_read_data[5]       OUTPUT        G12          LVCMOS25       8                 OREG                     
+o_slave_read_data[4]       OUTPUT        M9           LVCMOS25       8                 OREG                     
+o_slave_read_data[3]       OUTPUT        P4           LVCMOS25       8                 OREG                     
+o_slave_read_data[2]       OUTPUT        T9           LVCMOS25       8                 OREG                     
+o_slave_read_data[1]       OUTPUT        L10          LVCMOS25       8                 OREG                     
+o_slave_read_data[0]       OUTPUT        M5           LVCMOS25       8                 OREG                     
+o_slave_write_ack          OUTPUT        T8           LVCMOS25       8                 NONE                     
+

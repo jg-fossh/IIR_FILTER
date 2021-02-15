@@ -1,0 +1,5 @@
+
+read_verilog "../../source/Multiplier.v" "../../source/BiQuad.v" "../../source/IIR_Filter.v"
+synth_ice40 -dsp -json IIR_Filter_syn.json -top IIR_Filter
+##JSON
+write_json IIR_Filter_syn.json

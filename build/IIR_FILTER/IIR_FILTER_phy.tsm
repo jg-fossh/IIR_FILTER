@@ -1,0 +1,153 @@
+eagle_s20
+13 23 265 711 10701 0 0
+14.752 0.266 IIR_Filter eagle_s20 BG256 Detail 7 1
+clock: i_clk
+13 10701 711 3
+Setup check
+23 3
+Endpoint: [1]$biquad/multiplier_d/Integer_Multiplier_
+23 14.752000 18 3
+Timing path: [1]$biquad/reg3_b5|[1]$biquad/reg2_b5.clk->[1]$biquad/multiplier_d/Integer_Multiplier_
+[1]$biquad/reg3_b5|[1]$biquad/reg2_b5.clk
+[1]$biquad/multiplier_d/Integer_Multiplier_
+25 14.752000 23.360000 8.608000 1 1
+[1]$biquad/r_z4[5] [1]$biquad/multiplier_d/Integer_Multiplier_.b[5]
+
+Timing path: [1]$biquad/reg3_b1|[1]$biquad/reg2_b1.clk->[1]$biquad/multiplier_d/Integer_Multiplier_
+[1]$biquad/reg3_b1|[1]$biquad/reg2_b1.clk
+[1]$biquad/multiplier_d/Integer_Multiplier_
+51 14.833000 23.360000 8.527000 1 1
+[1]$biquad/r_z4[1] [1]$biquad/multiplier_d/Integer_Multiplier_.b[1]
+
+Timing path: [1]$biquad/reg3_b3|[1]$biquad/reg2_b3.clk->[1]$biquad/multiplier_d/Integer_Multiplier_
+[1]$biquad/reg3_b3|[1]$biquad/reg2_b3.clk
+[1]$biquad/multiplier_d/Integer_Multiplier_
+77 14.982000 23.360000 8.378000 1 1
+[1]$biquad/r_z4[3] [1]$biquad/multiplier_d/Integer_Multiplier_.b[3]
+
+
+Endpoint: [1]$biquad/multiplier_a/Integer_Multiplier_
+103 14.752000 18 3
+Timing path: [1]$biquad/reg1_b4|[1]$biquad/reg1_b5.clk->[1]$biquad/multiplier_a/Integer_Multiplier_
+[1]$biquad/reg1_b4|[1]$biquad/reg1_b5.clk
+[1]$biquad/multiplier_a/Integer_Multiplier_
+105 14.752000 23.360000 8.608000 1 1
+[1]$biquad/r_z2[5] [1]$biquad/multiplier_a/Integer_Multiplier_.b[5]
+
+Timing path: [1]$biquad/reg1_b12|[1]$biquad/reg1_b13.clk->[1]$biquad/multiplier_a/Integer_Multiplier_
+[1]$biquad/reg1_b12|[1]$biquad/reg1_b13.clk
+[1]$biquad/multiplier_a/Integer_Multiplier_
+131 14.768000 23.360000 8.592000 1 1
+[1]$biquad/r_z2[12] [1]$biquad/multiplier_a/Integer_Multiplier_.b[12]
+
+Timing path: [1]$biquad/reg1_b3|[1]$biquad/reg1_b6.clk->[1]$biquad/multiplier_a/Integer_Multiplier_
+[1]$biquad/reg1_b3|[1]$biquad/reg1_b6.clk
+[1]$biquad/multiplier_a/Integer_Multiplier_
+157 14.835000 23.360000 8.525000 1 1
+[1]$biquad/r_z2[3] [1]$biquad/multiplier_a/Integer_Multiplier_.b[3]
+
+
+Endpoint: [0]$biquad/multiplier_d/Integer_Multiplier_
+183 14.761000 18 3
+Timing path: [0]$biquad/reg3_b8|[0]$biquad/reg2_b8.clk->[0]$biquad/multiplier_d/Integer_Multiplier_
+[0]$biquad/reg3_b8|[0]$biquad/reg2_b8.clk
+[0]$biquad/multiplier_d/Integer_Multiplier_
+185 14.761000 23.360000 8.599000 1 1
+[0]$biquad/r_z4[8] [0]$biquad/multiplier_d/Integer_Multiplier_.b[8]
+
+Timing path: [0]$biquad/reg3_b15|[0]$biquad/reg2_b15.clk->[0]$biquad/multiplier_d/Integer_Multiplier_
+[0]$biquad/reg3_b15|[0]$biquad/reg2_b15.clk
+[0]$biquad/multiplier_d/Integer_Multiplier_
+211 14.804000 23.360000 8.556000 1 1
+[0]$biquad/r_z4[15] [0]$biquad/multiplier_d/Integer_Multiplier_.b[15]
+
+Timing path: [0]$biquad/reg3_b14|[0]$biquad/reg2_b14.clk->[0]$biquad/multiplier_d/Integer_Multiplier_
+[0]$biquad/reg3_b14|[0]$biquad/reg2_b14.clk
+[0]$biquad/multiplier_d/Integer_Multiplier_
+237 14.820000 23.360000 8.540000 1 1
+[0]$biquad/r_z4[14] [0]$biquad/multiplier_d/Integer_Multiplier_.b[14]
+
+
+
+Hold check
+263 3
+Endpoint: [1]$biquad/reg3_b4|[1]$biquad/reg2_b4
+265 0.266000 1 1
+Timing path: [1]$biquad/reg1_b4|[1]$biquad/reg1_b5.clk->[1]$biquad/reg3_b4|[1]$biquad/reg2_b4
+[1]$biquad/reg1_b4|[1]$biquad/reg1_b5.clk
+[1]$biquad/reg3_b4|[1]$biquad/reg2_b4
+267 0.266000 3.756000 4.022000 1 1
+[1]$biquad/r_z2[4] [1]$biquad/reg3_b4|[1]$biquad/reg2_b4.mi[0]
+
+
+Endpoint: [0]$biquad/reg3_b12|[0]$biquad/reg2_b12
+293 0.275000 1 1
+Timing path: [0]$biquad/reg1_b12|[0]$biquad/reg1_b13.clk->[0]$biquad/reg3_b12|[0]$biquad/reg2_b12
+[0]$biquad/reg1_b12|[0]$biquad/reg1_b13.clk
+[0]$biquad/reg3_b12|[0]$biquad/reg2_b12
+295 0.275000 3.756000 4.031000 1 1
+[0]$biquad/r_z2[12] [0]$biquad/reg3_b12|[0]$biquad/reg2_b12.mi[0]
+
+
+Endpoint: [1]$biquad/reg3_b5|[1]$biquad/reg2_b5
+321 0.294000 1 1
+Timing path: [1]$biquad/reg1_b4|[1]$biquad/reg1_b5.clk->[1]$biquad/reg3_b5|[1]$biquad/reg2_b5
+[1]$biquad/reg1_b4|[1]$biquad/reg1_b5.clk
+[1]$biquad/reg3_b5|[1]$biquad/reg2_b5
+323 0.294000 3.862000 4.156000 1 1
+[1]$biquad/r_z2[5] [1]$biquad/reg3_b5|[1]$biquad/reg2_b5.mi[0]
+
+
+
+Period check
+349 13
+Endpoint: [0]$biquad/multiplier_a/Integer_Multiplier_.clk
+353 36.586000 1 0
+
+Endpoint: [0]$biquad/multiplier_b/Integer_Multiplier_.clk
+354 36.586000 1 0
+
+Endpoint: [0]$biquad/multiplier_c/Integer_Multiplier_.clk
+355 36.586000 1 0
+
+Endpoint: [0]$biquad/multiplier_d/Integer_Multiplier_.clk
+356 36.586000 1 0
+
+Endpoint: [1]$biquad/multiplier_a/Integer_Multiplier_.clk
+357 36.586000 1 0
+
+Endpoint: [1]$biquad/multiplier_b/Integer_Multiplier_.clk
+358 36.586000 1 0
+
+Endpoint: [1]$biquad/multiplier_c/Integer_Multiplier_.clk
+359 36.586000 1 0
+
+Endpoint: [1]$biquad/multiplier_d/Integer_Multiplier_.clk
+360 36.586000 1 0
+
+Endpoint: [2]$biquad/multiplier_a/Integer_Multiplier_.clk
+361 36.586000 1 0
+
+Endpoint: [2]$biquad/multiplier_b/Integer_Multiplier_.clk
+362 36.586000 1 0
+
+Endpoint: [2]$biquad/multiplier_c/Integer_Multiplier_.clk
+363 36.586000 1 0
+
+Endpoint: [2]$biquad/multiplier_d/Integer_Multiplier_.clk
+364 36.586000 1 0
+
+Endpoint: multiplier/Integer_Multiplier_.clk
+365 36.586000 1 0
+
+
+
+
+Timing group statistics: 
+	Clock constraints: 
+	  Clock Name                                  Min Period     Max Freq           Skew      Fanout            TNS
+	  i_clk (25.000MHz)                             10.496ns      95.274MHz        0.399ns       195        0.000ns
+	Minimum input arrival time before clock: no constraint path
+	Maximum output required time after clock: no constraint path
+	Maximum combinational path delay: no constraint path
+
